@@ -1,0 +1,26 @@
+import { createPolymorphicComponent, DefaultProps, useComponentDefaultProps } from "@mantine/core";
+import useStyles from "./{{ name }}.styles";
+import React from "react";
+
+export interface {{ name }}Props extends DefaultProps<never> {
+    
+}
+
+const defaultProps: Partial<{{ name }}Props> = {
+
+};
+
+export const _{{ name }} = React.forwardRef<HTMLDivElement, {{ name }}Props>((props, ref) => {
+    const { children } = useComponentDefaultProps("{{ name }}", defaultProps, props);
+    const { classes, cx } = useStyles();
+
+    return (
+        <div className={cx(classes.root, className)} ref={ref}>
+            {children}
+        </div>
+    );
+}) as any;
+
+_{{ name }}.displayName = "@theme/blocks/{{ name }}";
+
+export const {{ name }} = createPolymorphicComponent<"div", {{ name }}Props>(_{{ name }});

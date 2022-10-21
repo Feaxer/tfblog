@@ -4,6 +4,7 @@ import {
     MantineThemeOverride,
 } from "@mantine/core";
 import React from "react";
+import "../main.css"
 
 const customTheme: MantineThemeOverride = {
     dir: "ltr",
@@ -74,8 +75,8 @@ const customTheme: MantineThemeOverride = {
 
     headings: {
         fontFamily:
-            "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji",
-        fontWeight: 700,
+            "'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji",
+        fontWeight: 600,
         sizes: {
             h1: { fontSize: 34, lineHeight: 1.3, fontWeight: undefined },
             h2: { fontSize: 26, lineHeight: 1.35, fontWeight: undefined },

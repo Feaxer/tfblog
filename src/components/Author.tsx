@@ -35,9 +35,7 @@ Author.Inline = ({ avatar, name, href, date }: AuthorProps) => {
     return <Group spacing={4}>
         <Image src={avatar} width={50} height={50} radius={500} mr={8} classNames={{ image: classes.image }} />
         <Box>
-            <Anchor href={href} weight="bold" color="dark" mb={-2}>
-                {name}
-            </Anchor>
+            <Anchor href={href} weight="bold" color="dark" mb={-2}> {name} </Anchor>
             <Text color="dimmed">{date}</Text>
         </Box>
     </Group>
